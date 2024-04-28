@@ -1,0 +1,37 @@
+# Arquivos binarios e executaveis
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Arquivos de compilacao
+*.o
+*.a
+
+# Diretorio de dependencias
+/vendor/
+/go.mod
+/go.sum
+
+# Arquivos de build
+/build/
+/bin/
+/pkg/
+/vendor/
+
+
+# Arquivos temporarios
+*.tmp
+*.temp
+
+#Arquivos de log e cache
+*.log
+*.cache
+/logs/
+
+# Arquivos de configuracao especificos do ambiente
+.env
+.env.local
+
+# Arquivos de backup
+*~
