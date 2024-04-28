@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="/assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="global-header">
+        <div class="header-container">
+            <a href="/" class="link-ead-header">EAD Compare</a>
+        </div>
+    </header>
+
+    <div class="global-container">
+        <div class="login-container">
+            <form id="login-form">
+                <h3>Faça seu login:</h3>
+
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">
+                    Senha:
+                </label>
+                <input type="password" name="password" id="password" required>
+
+                <button type="submit">Entrar</button>
+                <p id="error-message" style="color: red; display: none;">Credenciais inválidas</p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="global-footer">
+        <div class="footer-container">
+            <h4>EAD Compare © 2024</h4>
+            <a href="/about">Quem somos</a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/login.js"></script>
+</body>
+
+</html>

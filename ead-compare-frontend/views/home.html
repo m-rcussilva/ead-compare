@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página Inicial - EAD Compare</title>
+    <link href="/assets/css/global.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/home.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="global-header">
+        <div class="header-container">
+            <a href="/" class="link-ead-header">EAD Compare</a>
+        </div>
+    </header>
+
+    <div class="home-container global-container">
+        <div class="home-form-container">
+            <div class="search-form-container">
+                <h3>Pesquise pelo nome do curso</h3>
+                <form class="search-form">
+                    <input type="search" name="course" id="course" class="form-control"
+                        placeholder="Ex: Análise e Desenvolvimento de Sistemas" required>
+                </form>
+            </div>
+
+            <div id="suggestions" class="suggestions-list"></div>
+
+            <div class="home-img-container">
+                <img src="/assets/images/graduation.png" alt="Graduation" class="img-graduation">
+            </div>
+        </div>
+    </div>
+
+    <footer class="global-footer">
+        <div class="footer-container">
+            <h4>EAD Compare © 2024</h4>
+            <a href="/about">Quem somos</a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/search.js"></script>
+</body>
+
+</html>

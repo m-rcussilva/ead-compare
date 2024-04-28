@@ -1,0 +1,30 @@
+.course-list {
+    margin-top: 20px;
+}
+
+.course-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.course-item h3 {
+    margin-top: 0;
+}
+
+.course-item p {
+    margin-bottom: 5px;
+}
+
+.edit-button {
+    background-color: #e7e7e7;
+    color: #313131;
+    padding: 2px 8px;
+}
+
+.delete-button {
+    background-color: #ed5e68;
+    color: #fff;
+    padding: 2px 8px;
+}

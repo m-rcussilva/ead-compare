@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Curso Universitário</title>
+    <link rel="stylesheet" href="./assets/css/global.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/register.css" type="text/css">
+</head>
+
+<body>
+    <header class="global-header">
+        <div class="header-container">
+            <a href="/" class="link-ead-header">EAD Compare</a>
+        </div>
+    </header>
+
+    <div class="global-container">
+        <h2 class="form-register-title">Cadastro de Curso Universitário</h2>
+        <form id="form-register" class="form-register">
+            <h3>Universidade</h3>
+            <div class="register-fields">
+                <div class="rf-flex-column">
+                    <label for="nome_universidade">Nome da Universidade: *</label>
+                    <input type="text" id="nome_universidade" name="nome_universidade" required>
+                </div>
+                <div class="rf-flex-column">
+                    <label for="nota_mec">Nota MEC: *</label>
+                    <input type="number" id="nota_mec" name="nota_mec" placeholder="Nota de 1 a 5" required>
+                </div>
+            </div>
+
+            <h3>Curso</h3>
+            <div class="register-fields">
+                <div class="rf-flex-column">
+                    <label for="nome_curso">Nome do curso: *</label>
+                    <input type="text" id="nome_curso" name="nome_curso" required>
+                </div>
+                <div class="rf-flex-column">
+                    <label for="duracao">Duração: *</label>
+                    <input type="text" id="duracao" name="duracao" placeholder="Ex: 2,5 anos" required>
+                </div>
+            </div>
+
+            <div class="register-fields">
+                <div class="rf-flex-column">
+                    <label for="carga_horaria">Carga horária: *</label>
+                    <input type="text" id="carga_horaria" name="carga_horaria" placeholder="Ex: 2000 horas" required>
+                </div>
+                <div class="rf-flex-column">
+                    <label for="formacao">Formação: *</label>
+                    <input type="text" id="formacao" name="formacao" placeholder="Ex: Bacharelado ou Tecnólogo"
+                        required>
+                </div>
+            </div>
+
+            <div class="register-fields">
+                <div class="rf-flex-column">
+                    <label for="informacoes_preco">Informações sobre o preço: *</label>
+                    <input type="text" id="informacoes_preco" name="informacoes_preco" required>
+                </div>
+                <div class="rf-flex-column">
+                    <label for="link">Link: *</label>
+                    <input type="text" id="link" name="link" required>
+                </div>
+            </div>
+
+            <fieldset class="fieldset">
+                <legend>Disciplinas:</legend>
+                <div id="disciplinas">
+                    <div>
+                        <label for="discipline_1">Disciplina do 1º Semestre:</label>
+                        <input type="text" id="discipline_1" name="disciplinas[]" required>
+                    </div>
+                </div>
+                <button class="btn-adddisc" type="button" onclick="addDiscipline()">Adicionar Disciplina</button>
+            </fieldset>
+
+            <br>
+            <button type="submit" class="btn-register">Cadastrar</button>
+        </form>
+
+        <a href="/list-all-courses" class="link-registered-courses">Ver lista de cursos cadastrados</a>
+    </div>
+
+    <footer class="global-footer">
+        <div class="footer-container">
+            <h4>EAD Compare © 2024</h4>
+            <a href="/about">Quem somos</a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/register.js"></script>
+</body>
+
+</html>
